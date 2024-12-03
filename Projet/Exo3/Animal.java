@@ -3,10 +3,11 @@ public abstract class Animal {
     String name ;
     String species ;
 
-    public Animal(int id, String name, String species) {
-        this.id = id;
+    public Animal(String name, String species) {
+        this.id = ZooManager.animalsList.size()+1;
         this.name = name;
         this.species = species;
+        ZooManager.animalsList.add(this);
     }
 
     public int getId() {

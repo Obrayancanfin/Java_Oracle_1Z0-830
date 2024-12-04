@@ -23,7 +23,6 @@ public class Main {
                     myMap.put(listdataParsed[1], listdataParsed[2]);
                 }
             }
-
             myReader.close();
         } catch (FileNotFoundException e) {
             System.out.println("An error occurred.");

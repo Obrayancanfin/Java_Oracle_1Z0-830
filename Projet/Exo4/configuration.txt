@@ -1,1 +1,0 @@
-{ "db.host": "localhost", "db.port": "5432", "app.name": "MyApplication" }

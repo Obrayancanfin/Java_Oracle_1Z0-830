@@ -141,7 +141,9 @@ public class Main {
         System.out.println("nombre total d’entrées pour les films sortis entre deux années données (par exemple : 1990 et 2000).");
         System.out.println(" ");
 
-        films.stream().filter(film -> 1990<film.getDate_de_sortie().getYear() && film.getDate_de_sortie().getYear()<2000 ).mapToLong(value -> value.getNbrEntree()).sum();
+        long sum = films.stream().filter(film -> 1990<film.getDate_de_sortie().getYear() && film.getDate_de_sortie().getYear()<2000 ).mapToLong(value -> value.getNbrEntree()).sum();
+        System.out.println(sum);
+
     }
 }
 

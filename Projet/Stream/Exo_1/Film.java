@@ -1,10 +1,7 @@
-package Stream;
+package Stream.Exo_1;
 
 import java.time.LocalDate;
 import java.time.format.DateTimeParseException;
-import java.util.Date;
-import java.util.List;
-import java.util.function.Function;
 
 public class Film {
 

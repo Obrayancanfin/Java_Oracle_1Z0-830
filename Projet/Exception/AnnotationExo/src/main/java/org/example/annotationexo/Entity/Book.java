@@ -1,8 +1,17 @@
+package org.example.annotationexo.Entity;
+
+import org.aspectj.lang.annotation.After;
+import org.aspectj.lang.annotation.Around;
+import org.aspectj.lang.annotation.Before;
+
 import java.time.LocalDate;
 import java.time.format.DateTimeParseException;
+import java.util.ArrayList;
+import java.util.List;
 
 
-public class Livre {
+public class Book {
+    public static List<Book> books = new ArrayList<Book>();
 
     String titre;
     String auteur;
@@ -12,7 +21,9 @@ public class Livre {
     boolean disponible;
     double prix;
 
-    public Livre(String titre, String auteur, String genre, LocalDate datePublication, int nombrePages, boolean disponible, double prix) {
+
+
+    public Book(String titre, String auteur, String genre, LocalDate datePublication, int nombrePages, boolean disponible, double prix) {
         this.titre = titre;
         this.auteur = auteur;
         this.genre = genre;
@@ -20,6 +31,7 @@ public class Livre {
         this.nombrePages = nombrePages;
         this.disponible = disponible;
         this.prix = prix;
+
     }
 
     public String getTitre() {
@@ -78,7 +90,7 @@ public class Livre {
         this.prix = prix;
     }
 
-    public static Livre parse(String string) {
+    public static Book parse(String string) {
         String[] split = string.split(",");
         String titre = split[0];
         String auteur = split[1];
@@ -88,7 +100,7 @@ public class Livre {
         boolean disponible = Boolean.parseBoolean(split[5]);
         double prix = Double.parseDouble(split[6]) ;
         try {
-            return new Livre(titre, auteur, genre, datePublication, nombrePages, disponible, prix);
+            return new Book(titre, auteur, genre, datePublication, nombrePages, disponible, prix);
         } catch (NumberFormatException | DateTimeParseException e) {
             e.printStackTrace();
         }

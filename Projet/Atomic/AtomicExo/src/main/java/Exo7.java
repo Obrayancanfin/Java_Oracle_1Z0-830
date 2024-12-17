@@ -13,11 +13,18 @@ public class Exo7 {
 
         ScheduledExecutorService service = Executors.newSingleThreadScheduledExecutor();
         AtomicInteger count = new AtomicInteger(0);
-        count.set(1);
-        while (count.get() < 5) {
-        service.scheduleAtFixedRate(()-> System.out.println("Message periodique " + count.getAndIncrement()), 1, 2, TimeUnit.SECONDS);
-        }
-        service.shutdown();
+
+        service.scheduleAtFixedRate(()-> {
+            int i = count.incrementAndGet();
+            System.out.println("Message periodique " + i );
+
+            if(i==5) {
+                service.shutdown();
+                System.out.println("Programme terminée");
+            }
+        }, 1, 2, TimeUnit.SECONDS);
+
+
 
     }
 

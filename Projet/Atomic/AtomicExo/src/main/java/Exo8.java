@@ -11,7 +11,7 @@ public class Exo8 {
 
     public static Thread[] exo8() {
         Thread[] threads = new Thread[10];
-        for (int i = 0; i < 5; i++) {
+        for (int i = 0; i < 10; i++) {
             threads[i] = new Thread(() -> {
                 for (int j = 0; j < 1000; j++) {
                     atomicInteger.incrementAndGet();

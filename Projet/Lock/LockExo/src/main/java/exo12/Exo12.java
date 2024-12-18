@@ -1,4 +1,4 @@
-package org.example.exo12;
+package exo12;
 
 public class Exo12 {
     public static void main(String[] args) throws InterruptedException {

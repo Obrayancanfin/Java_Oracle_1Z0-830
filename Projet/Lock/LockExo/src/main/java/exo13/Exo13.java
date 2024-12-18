@@ -1,7 +1,6 @@
-package org.example.exo13;
+package exo13;
 
 public class Exo13 {
-
 
     public static void main(String[] args) throws InterruptedException {
         Printer printer = new Printer();

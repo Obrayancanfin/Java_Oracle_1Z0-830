@@ -1,4 +1,4 @@
-package org.example.exo11;
+package exo11;
 
 public class BankAccount {
     static double balance= 0;

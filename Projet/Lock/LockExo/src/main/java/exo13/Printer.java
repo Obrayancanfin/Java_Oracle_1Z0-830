@@ -18,12 +18,10 @@ public class Printer {
     public static void getLock() {
         synchronized(reentrantLock){
         System.out.println(Thread.currentThread().getName() + " a acquis le verrou et utilise l'imprimante...");
-        int waitingTime = (int) ((Math.random() * (1003 - 999)) + 999);
-
-        try {
-            Thread.sleep(waitingTime);
-            if (reentrantLock.tryLock(1, TimeUnit.SECONDS)) {
+            try {
+            if (reentrantLock.tryLock(5,TimeUnit.SECONDS)) {
                     System.out.println(Thread.currentThread().getName() + " a terminé d'utiliser l'imprimante et libère le verrou.");
+                    Thread.sleep(1000);
             } else {
                 throw new InterruptedException();
             }

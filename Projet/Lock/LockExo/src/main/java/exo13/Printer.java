@@ -17,7 +17,6 @@ public class Printer {
 
     public static void getLock() {
         synchronized(reentrantLock){
-
         System.out.println(Thread.currentThread().getName() + " a acquis le verrou et utilise l'imprimante...");
         int waitingTime = (int) ((Math.random() * (1003 - 999)) + 999);
 

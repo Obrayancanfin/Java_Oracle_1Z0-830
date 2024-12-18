@@ -4,8 +4,8 @@ public class Exo12 {
     public static void main(String[] args) throws InterruptedException {
         SharedResource sharedResource = new SharedResource();
 
-        Thread thread1 = new Thread(sharedResource::addIntegerList);
-        Thread thread2 = new Thread(sharedResource::removeIntegerList);
+        Thread thread1 = new Thread(sharedResource::addIntegerList,"Thread1");
+        Thread thread2 = new Thread(sharedResource::removeIntegerList,"Thread2");
 
         thread1.start();
         thread2.start();

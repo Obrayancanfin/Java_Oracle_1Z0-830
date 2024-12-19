@@ -26,7 +26,7 @@ public class Main {
     public static void addToList(CopyOnWriteArrayList listSet){
         for (int i = 0; i < 3; i++) {
         int number = ThreadLocalRandom.current().nextInt(9);
-        String threadProduct = Thread.currentThread().getName()+"Produit-"+number;
+        String threadProduct = Thread.currentThread().getName()+"Produit-"+ number;
             System.out.println(threadProduct);
         listSet.add(threadProduct);
         }

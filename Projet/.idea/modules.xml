@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Exception/AnnotationExo/AnnotationExo.iml" filepath="$PROJECT_DIR$/Exception/AnnotationExo/AnnotationExo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Atomic/Atomic.iml" filepath="$PROJECT_DIR$/Atomic/Atomic.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CycleBarriere/CycleBarriere.iml" filepath="$PROJECT_DIR$/CycleBarriere/CycleBarriere.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Exception/Exo1/Exo1.iml" filepath="$PROJECT_DIR$/Exception/Exo1/Exo1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ExoThread/ExoThread.iml" filepath="$PROJECT_DIR$/ExoThread/ExoThread.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Java_Fonctuelle/Java_Fonctuelle.iml" filepath="$PROJECT_DIR$/Java_Fonctuelle/Java_Fonctuelle.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Lock/Lock.iml" filepath="$PROJECT_DIR$/Lock/Lock.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Projet.iml" filepath="$PROJECT_DIR$/Projet.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Stream/Stream.iml" filepath="$PROJECT_DIR$/Stream/Stream.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ThreadExo/ThreadExo.iml" filepath="$PROJECT_DIR$/ThreadExo/ThreadExo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/testAWT/testAWT.iml" filepath="$PROJECT_DIR$/testAWT/testAWT.iml" />
+    </modules>
+  </component>
+</project>

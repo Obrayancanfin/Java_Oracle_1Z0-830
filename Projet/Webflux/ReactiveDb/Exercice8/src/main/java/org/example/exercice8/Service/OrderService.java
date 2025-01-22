@@ -19,7 +19,7 @@ public class OrderService {
 
     public Mono<Order> getOrderById(Long id){return orderRepository.findById(id);}
 
-    public Mono<Order> getAllOrderForId(Long id){return orderRepository.findOrderById(id). }
+    //public Mono<Order> getAllOrderForId(Long id){return orderRepository.findOrderById(id). }
 
 
     public Mono<Order> addOrder(Order order){return orderRepository.save(order);}
